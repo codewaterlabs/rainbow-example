@@ -1,0 +1,3 @@
+type sceneState = {
+  placeholder: int
+};
