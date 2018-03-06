@@ -1,16 +1,9 @@
-let setup = (_canvas) : SceneState.sceneState => {
-  {
-    placeholder: 0
-  }
-};
+let setup = _canvas : SceneState.sceneState => {placeholder: 0};
 
-let createRootNode = _state => {
-  Node1.makeNode()
-};
+let createRootNode = _state => Node1.makeNode();
 
-let createScene = (canvas, state) => {
+let createScene = (canvas, state) =>
   Scene.make(canvas, state, createRootNode(state), ~drawListDebug=false, ());
-};
 
 let draw = (state, scene, _canvas: Gpu.Canvas.t) => {
   Scene.update(scene);

@@ -1,3 +1,1 @@
-type sceneState = {
-  placeholder: int
-};
+type sceneState = {placeholder: int};
